@@ -25,26 +25,76 @@
 }
 .about--home__content--btn {
   margin-top: 8rem;
+  padding: 15px 32px;
 }
 
 .barristers {
   background-color: #f3f5f7;
   height: auto;
-}
-.barristers__intro {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.barristers__intro--title {
+.barristers--title {
   font-size: 64px;
   margin-top: 5rem;
 }
-.barristers__intro--paragraph {
+.barristers--paragraph {
   width: 45%;
   text-align: center;
 }
+.barristers--btn {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 20px 65px;
+}
 
+.barrister__card--container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 75em;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.barrister__card--container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.barrister__card {
+  width: 250px;
+  background-color: white;
+}
+.barrister__card--content {
+  padding: 1rem;
+  height: 200px;
+}
+.barrister__card--name {
+  font-size: 24px;
+  font-family: ‘Playfair Display’, serif;
+  color: #063722;
+  font-weight: 700;
+}
+.barrister__card--speciality {
+  margin-top: 1rem;
+  font-size: 14px;
+  font-family: ‘Roboto’, sans-serif;
+  color: #939fad;
+  margin-bottom: 4rem;
+  height: 50px;
+}
+.barrister__card--cta {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  font-family: ‘Roboto’, sans-serif;
+  font-weight: 700;
+  color: #addb43;
+}
 *,
 *::after,
 *::before {
@@ -87,7 +137,6 @@ img {
   color: #063722;
   font-weight: 700;
   font-size: 14px;
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -123,6 +172,7 @@ img {
 .hero__content--btn {
   margin-top: 2rem;
   transition: 0.3s;
+  padding: 15px 32px;
 }
 .hero--img {
   width: 99%;

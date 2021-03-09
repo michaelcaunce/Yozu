@@ -24,4 +24,8 @@ function theme_features() {
 
 add_action('after_setup_theme', 'theme_features');
 
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+}
+
 ?>
