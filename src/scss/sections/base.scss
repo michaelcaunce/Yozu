@@ -19,3 +19,38 @@ body {
 img {
   max-width: 100%;
 }
+
+// Reusable classes for the body paragraph, titles and buttons
+.body__content {
+  font-family: $bodyFont;
+  color: $mainGrey;
+  letter-spacing: 0px;
+  line-height: 1.5;
+}
+
+.body__title {
+  font-size: 84px;
+  font-family: $headingFont;
+  color: $mainGreen;
+  font-weight: normal;
+}
+
+.body__btn {
+  background-color: $accentGreen;
+  border-radius: 29px;
+  font-family: $bodyFont;
+  color: $mainGreen;
+  font-weight: $fw-m;
+  font-size: 14px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $mainGreen;
+    color: $accentGreen;
+  }
+}

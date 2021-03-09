@@ -1,7 +1,6 @@
 .header {
   @include container($max-width: 75em);
   @include clearfix;
-  position: absolute;
   left: 0;
   right: 0;
   height: 150px;
@@ -31,9 +30,10 @@
     padding: 0;
 
     a {
-      font-size: 13px;
-      font-family: ‘Roboto’, sans-serif;
+      font-family: $bodyFont;
       color: $mainGreen;
+      font-size: 0.8rem;
+      font-weight: $fw-n;
       text-decoration: none;
       padding: 0 1.2em;
       display: inline-block;
@@ -46,13 +46,13 @@
         display: block;
         width: 0;
         height: 0.1em;
-        background-color: blue;
+        background-color: $accentGreen;
         margin-top: 0.3em;
       }
 
       &:hover::after {
         width: 99%;
-        transition: 0.1s;
+        transition: 0.3s;
       }
     }
   }

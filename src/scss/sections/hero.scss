@@ -1,0 +1,27 @@
+.hero {
+  height: auto;
+  margin-top: 8rem;
+
+  &__content {
+    @include container($max-width: 75em);
+    @include clearfix;
+
+    &--title {
+      width: 65%;
+    }
+
+    &--intro {
+      width: 60%;
+    }
+
+    &--btn {
+      margin-top: 2rem;
+      transition: 0.3s;
+    }
+  }
+
+  &--img {
+    width: 99%;
+    margin-top: 10rem;
+  }
+}

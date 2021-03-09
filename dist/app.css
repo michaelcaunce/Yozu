@@ -21,11 +21,72 @@ img {
   max-width: 100%;
 }
 
+.body__content {
+  font-family: ‘Roboto’, sans-serif;
+  color: #939fad;
+  letter-spacing: 0px;
+  line-height: 1.5;
+}
+
+.body__title {
+  font-size: 84px;
+  font-family: ‘Playfair Display’, serif;
+  color: #063722;
+  font-weight: normal;
+}
+
+.body__btn {
+  background-color: #addb43;
+  border-radius: 29px;
+  font-family: ‘Roboto’, sans-serif;
+  color: #063722;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.body__btn:hover {
+  background-color: #063722;
+  color: #addb43;
+}
+
+.hero {
+  height: auto;
+  margin-top: 8rem;
+}
+.hero__content {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 75em;
+}
+.hero__content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.hero__content--title {
+  width: 65%;
+}
+.hero__content--intro {
+  width: 60%;
+}
+.hero__content--btn {
+  margin-top: 2rem;
+  transition: 0.3s;
+}
+.hero--img {
+  width: 99%;
+  margin-top: 10rem;
+}
+
 .header {
   width: 90%;
   margin: 0 auto;
   max-width: 75em;
-  position: absolute;
   left: 0;
   right: 0;
   height: 150px;
@@ -60,9 +121,10 @@ img {
   padding: 0;
 }
 .navigation ul a {
-  font-size: 13px;
   font-family: ‘Roboto’, sans-serif;
   color: #063722;
+  font-size: 0.8rem;
+  font-weight: 400;
   text-decoration: none;
   padding: 0 1.2em;
   display: inline-block;
@@ -75,12 +137,12 @@ img {
   display: block;
   width: 0;
   height: 0.1em;
-  background-color: blue;
+  background-color: #addb43;
   margin-top: 0.3em;
 }
 .navigation ul a:hover::after {
   width: 99%;
-  transition: 0.1s;
+  transition: 0.3s;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
