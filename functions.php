@@ -15,4 +15,13 @@ function theme_files() {
 // Add Wordpress actions
 add_action('wp_enqueue_scripts', 'theme_files');
 
+// Created function to add new features
+function theme_features() {
+    register_nav_menu('headerMenu', 'Header Menu Location');
+    // relevant titles to the browsers tab
+    add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'theme_features');
+
 ?>

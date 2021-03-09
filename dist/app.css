@@ -1,3 +1,88 @@
+@charset "UTF-8";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 75em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header--logo {
+  display: block;
+  height: 4em;
+  width: auto;
+  margin-left: 3em;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  list-style: none;
+  padding: 0;
+}
+.navigation ul a {
+  font-size: 13px;
+  font-family: ‘Roboto’, sans-serif;
+  color: #063722;
+  text-decoration: none;
+  padding: 0 1.2em;
+  display: inline-block;
+  transition: transform 0.3s;
+  letter-spacing: 0.65px;
+  text-transform: uppercase;
+}
+.navigation ul a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.1em;
+  background-color: blue;
+  margin-top: 0.3em;
+}
+.navigation ul a:hover::after {
+  width: 99%;
+  transition: 0.1s;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */

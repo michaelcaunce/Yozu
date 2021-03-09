@@ -1,0 +1,59 @@
+.header {
+  @include container($max-width: 75em);
+  @include clearfix;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--logo {
+    display: block;
+    height: 4em;
+    width: auto;
+    margin-left: 3em;
+  }
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    list-style: none;
+    padding: 0;
+
+    a {
+      font-size: 13px;
+      font-family: ‘Roboto’, sans-serif;
+      color: $mainGreen;
+      text-decoration: none;
+      padding: 0 1.2em;
+      display: inline-block;
+      transition: transform 0.3s;
+      letter-spacing: 0.65px;
+      text-transform: uppercase;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0.1em;
+        background-color: blue;
+        margin-top: 0.3em;
+      }
+
+      &:hover::after {
+        width: 99%;
+        transition: 0.1s;
+      }
+    }
+  }
+}

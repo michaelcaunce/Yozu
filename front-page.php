@@ -8,4 +8,3 @@ get_footer();
 
 ?>
 
-This is the homepage
