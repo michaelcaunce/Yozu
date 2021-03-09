@@ -1,6 +1,10 @@
 <?php 
 
-// ACF for homepage barrisers section
+// ACF for barristers section
+$title = get_field('title');
+$intro = get_field('intro');
+
+// ACF for barristers custom post type
 $name = get_field('name', get_option('page_for_posts'));
 $speciality = get_field('speciality');
 $image = get_field('image');
@@ -12,8 +16,8 @@ $link_url = get_field('link_url');
 
 
 <section class="barristers">
-  <h1 class="body__title barristers--title">Meet our barristers</h1>
-  <p class="body__content barristers--paragraph">Praesent molestie, mi et blandit tincidunt, erat diam accumsan justo, non tristique mauris lectus vel odio. Mauris pulvinar arcu sollicitudin nibh sodales malesuada et non libero. Vestibulum consequat erat et purus auctor, vitae vehicula dui pretium.</p>
+  <h1 class="body__title barristers--title"><?php echo $title; ?></h1>
+  <p class="body__content barristers--paragraph"><?php echo $intro; ?></p>
   <div class="barrister__card--container">
     <?php 
     $barristers = new WP_Query(array(
