@@ -17,5 +17,5 @@ $hero_image = get_field('hero_image');
     -->
   </div>
   
- <img class="hero--img" src="<?php echo $hero_image['url']; ?>" alt="<?php echo $hero_feature_image['alt']; ?>">
+ <img class="hero--img" src="<?php echo $hero_image['url']; ?>" alt="<?php echo $hero_image['alt']; ?>">
 </section>

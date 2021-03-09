@@ -1,0 +1,25 @@
+.about--home {
+  @include container($max-width: 75em);
+  @include clearfix;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  display: flex;
+  gap: 6rem;
+
+  &--img {
+    width: 501px;
+    height: 559px;
+  }
+
+  &__content {
+    margin-top: -3.2rem;
+
+    &--title {
+      font-size: 64px;
+    }
+
+    &--btn {
+      margin-top: 8rem;
+    }
+  }
+}

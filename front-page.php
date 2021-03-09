@@ -5,6 +5,8 @@
 get_header();
 get_template_part('template-parts/content', 'hero');
 get_template_part('template-parts/homepage/content', 'about');
+get_template_part('template-parts/homepage/content', 'barristers');
+
 get_footer();
 
 ?>
